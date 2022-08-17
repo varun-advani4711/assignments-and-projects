@@ -1,0 +1,137 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+# Date created = 15:30:55  April 15, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		final_proj_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY final_proj
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:30:55  APRIL 15, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "QuestaSim (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ns" -section_id eda_simulation
+set_global_assignment -name EDA_RUN_TOOL_AUTOMATICALLY OFF -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_Y23 -to DAT_IN[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CLK
+set_location_assignment PIN_Y2 -to CLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to EX_N
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RST_N
+set_location_assignment PIN_M23 -to RST_N
+set_location_assignment PIN_M21 -to EX_N
+set_location_assignment PIN_Y24 -to DAT_IN[2]
+set_location_assignment PIN_AA22 -to DAT_IN[1]
+set_location_assignment PIN_AA23 -to DAT_IN[0]
+set_location_assignment PIN_G19 -to ERR_OVFL
+set_location_assignment PIN_F19 -to ERR_UNFL
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX3_C
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX3_D
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX3_E
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX3_F
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to HEX3_G
+set_instance_assignment -name IO_STANDARD "2.5 V" -to MODE[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to MODE[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to MODE
+set_location_assignment PIN_AB20 -to HEX3_C
+set_location_assignment PIN_AA21 -to HEX3_D
+set_location_assignment PIN_AD24 -to HEX3_E
+set_location_assignment PIN_AF23 -to HEX3_F
+set_location_assignment PIN_Y19 -to HEX3_G
+set_location_assignment PIN_AC28 -to MODE[1]
+set_location_assignment PIN_AB28 -to MODE[0]
+set_location_assignment PIN_G18 -to HEX0_A
+set_location_assignment PIN_F22 -to HEX0_B
+set_location_assignment PIN_E17 -to HEX0_C
+set_location_assignment PIN_L26 -to HEX0_D
+set_location_assignment PIN_L25 -to HEX0_E
+set_location_assignment PIN_J22 -to HEX0_F
+set_location_assignment PIN_H22 -to HEX0_G
+set_location_assignment PIN_M24 -to HEX1_A
+set_location_assignment PIN_Y22 -to HEX1_B
+set_location_assignment PIN_W21 -to HEX1_C
+set_location_assignment PIN_W22 -to HEX1_D
+set_location_assignment PIN_W25 -to HEX1_E
+set_location_assignment PIN_U23 -to HEX1_F
+set_location_assignment PIN_U24 -to HEX1_G
+set_location_assignment PIN_AA25 -to HEX2_A
+set_location_assignment PIN_AA26 -to HEX2_B
+set_location_assignment PIN_Y25 -to HEX2_C
+set_location_assignment PIN_W26 -to HEX2_D
+set_location_assignment PIN_Y26 -to HEX2_E
+set_location_assignment PIN_W27 -to HEX2_F
+set_location_assignment PIN_W28 -to HEX2_G
+set_location_assignment PIN_V21 -to HEX3_A
+set_location_assignment PIN_U21 -to HEX3_B
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_final_proj -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_final_proj -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_final_proj
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME final_proj -section_id tb_final_proj
+set_global_assignment -name EDA_MAINTAIN_DESIGN_HIERARCHY ON -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_RTL_SIMULATION_COMMAND_SCRIPT ON -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_FILE src/tb_final_proj.sv -section_id tb_final_proj
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE src/mux4.v
+set_global_assignment -name SYSTEMVERILOG_FILE src/tb_final_proj.sv
+set_global_assignment -name VERILOG_FILE src/control.v
+set_global_assignment -name VERILOG_FILE src/seven_seg_decoder.v
+set_global_assignment -name BDF_FILE src/clock_generator.bdf
+set_global_assignment -name BDF_FILE src/clock_divider_1024.bdf
+set_global_assignment -name BDF_FILE src/final_proj.bdf
+set_global_assignment -name BDF_FILE src/full_adder.bdf
+set_global_assignment -name BDF_FILE src/adder4.bdf
+set_global_assignment -name BDF_FILE src/alu.bdf
+set_global_assignment -name BDF_FILE src/reg_file.bdf
+set_global_assignment -name BDF_FILE src/dffe4.bdf
+set_global_assignment -name BDF_FILE src/demux4.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name SYSTEMVERILOG_FILE src/tb_control.sv
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

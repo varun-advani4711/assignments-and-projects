@@ -1,0 +1,142 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 224 272)
+	(text "control" (rect 5 0 47 15)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 239 28 252)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 17 15)(font "Intel Clear" (font_size 8)))
+		(text "clk" (rect 21 27 38 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ex_n" (rect 0 0 28 15)(font "Intel Clear" (font_size 8)))
+		(text "ex_n" (rect 21 43 49 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "rst_n" (rect 0 0 30 15)(font "Intel Clear" (font_size 8)))
+		(text "rst_n" (rect 21 59 51 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "mode[1..0]" (rect 0 0 62 15)(font "Intel Clear" (font_size 8)))
+		(text "mode[1..0]" (rect 21 75 83 90)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "wr_en" (rect 0 0 36 15)(font "Intel Clear" (font_size 8)))
+		(text "wr_en" (rect 151 27 187 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 32)(pt 192 32))
+	)
+	(port
+		(pt 208 48)
+		(output)
+		(text "wr_addr[1..0]" (rect 0 0 76 15)(font "Intel Clear" (font_size 8)))
+		(text "wr_addr[1..0]" (rect 111 43 187 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 48)(pt 192 48)(line_width 3))
+	)
+	(port
+		(pt 208 64)
+		(output)
+		(text "wr_sel" (rect 0 0 37 15)(font "Intel Clear" (font_size 8)))
+		(text "wr_sel" (rect 150 59 187 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 64)(pt 192 64))
+	)
+	(port
+		(pt 208 80)
+		(output)
+		(text "rd_addr_a[1..0]" (rect 0 0 87 15)(font "Intel Clear" (font_size 8)))
+		(text "rd_addr_a[1..0]" (rect 100 75 187 90)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 80)(pt 192 80)(line_width 3))
+	)
+	(port
+		(pt 208 96)
+		(output)
+		(text "rd_addr_b[1..0]" (rect 0 0 88 15)(font "Intel Clear" (font_size 8)))
+		(text "rd_addr_b[1..0]" (rect 99 91 187 106)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 96)(pt 192 96)(line_width 3))
+	)
+	(port
+		(pt 208 112)
+		(output)
+		(text "err_ovfl" (rect 0 0 46 15)(font "Intel Clear" (font_size 8)))
+		(text "err_ovfl" (rect 141 107 187 122)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 112)(pt 192 112))
+	)
+	(port
+		(pt 208 128)
+		(output)
+		(text "err_unfl" (rect 0 0 46 15)(font "Intel Clear" (font_size 8)))
+		(text "err_unfl" (rect 141 123 187 138)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 128)(pt 192 128))
+	)
+	(port
+		(pt 208 144)
+		(output)
+		(text "hex3_vld" (rect 0 0 53 15)(font "Intel Clear" (font_size 8)))
+		(text "hex3_vld" (rect 134 139 187 154)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 144)(pt 192 144))
+	)
+	(port
+		(pt 208 160)
+		(output)
+		(text "hex2_vld" (rect 0 0 53 15)(font "Intel Clear" (font_size 8)))
+		(text "hex2_vld" (rect 134 155 187 170)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 160)(pt 192 160))
+	)
+	(port
+		(pt 208 176)
+		(output)
+		(text "hex1_vld" (rect 0 0 53 15)(font "Intel Clear" (font_size 8)))
+		(text "hex1_vld" (rect 134 171 187 186)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 176)(pt 192 176))
+	)
+	(port
+		(pt 208 192)
+		(output)
+		(text "hex0_vld" (rect 0 0 53 15)(font "Intel Clear" (font_size 8)))
+		(text "hex0_vld" (rect 134 187 187 202)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 192)(pt 192 192))
+	)
+	(port
+		(pt 208 208)
+		(output)
+		(text "alu_op" (rect 0 0 40 15)(font "Intel Clear" (font_size 8)))
+		(text "alu_op" (rect 147 203 187 218)(font "Intel Clear" (font_size 8)))
+		(line (pt 208 208)(pt 192 208))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 240))
+	)
+)

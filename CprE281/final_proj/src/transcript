@@ -1,0 +1,36 @@
+# Compile of adder4.v was successful.
+# Compile of alu.v was successful.
+# Compile of busmux_0.v was successful.
+# Compile of control.v was successful.
+# Compile of demux4.v was successful.
+# Compile of dffe4.v was successful.
+# Compile of full_adder.v was successful.
+# Compile of mux_0.v was successful.
+# Compile of mux_1.v was successful.
+# Compile of mux_2.v was successful.
+# Compile of mux_3.v was successful.
+# Compile of mux4.v was successful.
+# Compile of reg_file.v was successful.
+# Compile of tb_alu.sv was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.tb_alu
+# vsim -gui work.tb_alu 
+# Start time: 00:01:40 on May 01,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.tb_alu(fast)
+# Loading work.alu(fast)
+do final.do
+# End time: 00:02:00 on May 01,2022, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" work.tb_final_proj 
+# Start time: 00:02:00 on May 01,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: U:/CprE281/final_proj/src/busmux_0.v(27): Module 'busmux' is not defined.
+#  For instance 'lpm_instance' at path 'tb_final_proj.U_DUT.b2v_inst7'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./final.do PAUSED at line 1
